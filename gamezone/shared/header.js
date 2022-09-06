@@ -9,13 +9,15 @@ export default function Header({ title, navigation }) {
   }
 
   return (
-    <ImageBackground source={require('../assets/game_bg.png')} style={styles.header}>
+    // <ImageBackground source={require('../assets/game_bg.png')} style={styles.header}>
+    // </ImageBackground>
+    <>
+      {/* <Image source={require('../assets/heart_logo.png')} style={styles.headerImage} /> */}
       <MaterialIcons name='menu' size={28} onPress={openMenu} style={styles.icon} />
-      <View style={styles.headerTitle}>
-        <Image source={require('../assets/heart_logo.png')} style={styles.headerImage} />
+      <View style={styles.header}>
         <Text style={styles.headerText}>{title}</Text>
       </View>
-    </ImageBackground>
+    </>
   );
 }
 
@@ -30,12 +32,13 @@ const styles = StyleSheet.create({
   headerText: {
     fontWeight: 'bold',
     fontSize: 20,
-    color: '#333',
+    color: '#4fc6e0',
     letterSpacing: 1,
   },
   icon: {
     position: 'absolute',
     left: 16,
+    color: '#4fc6e0',
   },
   headerTitle: {
     flexDirection: 'row'

@@ -8,7 +8,7 @@ const screens = {
     screen: About,
     navigationOptions: ({ navigation }) => {
       return {
-        headerTitle: () => <Header title='GameZone' navigation={navigation} />
+        headerTitle: () => <Header title='Materna Pro' navigation={navigation} />
       }
     },
   },
@@ -16,8 +16,8 @@ const screens = {
 
 const AboutStack = createStackNavigator(screens, {
   defaultNavigationOptions: {
-    headerTintColor: '#444',
-    headerStyle: { backgroundColor: '#eee', height: 60 },
+    headerTintColor: '#4fc6e0',
+    headerStyle: { backgroundColor: '#fff', height: 60 },
   }
 });
 

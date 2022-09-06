@@ -3,7 +3,6 @@
     "name": "gamezone",
     "slug": "gamezone",
     "privacy": "public",
-    "sdkVersion": "35.0.0",
     "platforms": [
       "ios",
       "android",
@@ -25,6 +24,14 @@
     ],
     "ios": {
       "supportsTablet": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "04478a5d-9bd5-4a05-b1ad-663ea0586247"
+      }
+    },
+    "android": {
+      "package": "com.xablau123.gamezone"
     }
   }
 }
